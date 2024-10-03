@@ -15,6 +15,9 @@ const lowerCaseWords = (inputArray) => {
 
 
 // Execute!!
-lowerCaseWords(['Hello', 42, '...', 'abcd', null, undefined, new Date()])
+let mixedArray = ['Pizza', 10, true, 25, false, 'Wings'];
+console.log('Input: ' + mixedArray);
+console.log("Outut:")
+lowerCaseWords(mixedArray)
 .then(x => console.log(x))
 .catch(e => console.log(e));
