@@ -25,4 +25,4 @@ const rejectedPromise = (message) => {
 console.log("Calling resolvedPromise...");
 resolvedPromise().then(s => console.log(s));
 console.log("Calling rejectedPromise...");
-rejectedPromise().catch(e => console.error(e));
+rejectedPromise().catch(e => console.error(e.message));
